@@ -79,12 +79,12 @@ $ npm test
 
 Required arguments:
 
--f -> the path of the file containing the possible transitions or an initial state 
+-f -> the path of the file containing the possible transitions or an initial state\
 -e -> the name of the event
 
 Optional arguments:
 
--i -> an optional initial state, will override the initial state provided in the above file
+-i -> an optional initial state, will override the initial state provided in the above file\
 -t -> the final state that is expected. If this parameter is provided the final state is checked explicitly.
 
 ## Examples
