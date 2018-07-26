@@ -1,0 +1,6 @@
+*.swp
+.idea
+.nvmrc
+.tmp
+node_modules
+npm-debug.log

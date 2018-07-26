@@ -1,0 +1,21 @@
+{
+  "name": "ctm-wordcount",
+  "version": "1.0.0",
+  "description": "Word Counter",
+  "author": "Ashutosh Banerjee",
+  "private": true,
+  "main": "src",
+  "scripts": {
+    "test": "mocha ./src/**/*.spec.js",
+    "pretest": "eslint --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "commander": "^2.15.1",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-strongloop": "^2.1.0"
+  }
+}

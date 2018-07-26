@@ -1,0 +1,9 @@
+{
+  "initial": "solid",
+  "transitions": [
+    {"event": "melt", "from": "solid", "to": "liquid"},
+    {"event": "freeze", "from": "liquid", "to": "solid"},
+    {"event": "vaporize", "from": "liquid", "to": "gas"},
+    {"event": "condense", "from": "gas", "to": "liquid"}
+  ]
+}

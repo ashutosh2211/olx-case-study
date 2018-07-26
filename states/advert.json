@@ -1,0 +1,35 @@
+{
+  "initial": "New",
+  "transitions": [
+    {
+      "event": "activate",
+      "from": "New",
+      "to": "Active"
+    },
+    {
+      "event": "expired",
+      "from": "Active",
+      "to": "Outdated"
+    },
+    {
+      "event": "limit",
+      "from": "New",
+      "to": "Limited"
+    },
+    {
+      "event": "activateLimited",
+      "from": "Limited",
+      "to": "Active"
+    },
+    {
+      "event": "reactivate",
+      "from": "Outdated",
+      "to": "Active"
+    },
+    {
+      "event": "remove",
+      "from": "Outdated",
+      "to": "Removed"
+    }
+  ]
+}

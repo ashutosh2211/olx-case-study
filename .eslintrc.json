@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": false,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": "strongloop",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "rules" : {
+    "max-len" : ["warn", 150]
+  }
+
+}
