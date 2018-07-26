@@ -79,7 +79,7 @@ $ npm test
 
 Required arguments:
 
--f -> the path of the file containing the possible transitions or an initial state
+-f -> the path of the file containing the possible transitions or an initial state 
 -e -> the name of the event
 
 Optional arguments:
