@@ -15,14 +15,13 @@ describe('A TestClass which extends StateMachine', () => {
   describe('A TestClass instance', () => {
     it('should allow to register "onStateChange()" callback', () => {
       testClass.onStateChange((state) => {
-        console.log('TEST', state);
         seenStates.push(state);
       });
     });
 
     it('should allow to register "onInvalidTransition()" callback', () => {
-      testClass.onInvalidTransition((event, state) => {
-        invalidTransition = {event, state};
+      testClass.onInvalidTransition((fromState, toState) => {
+        invalidTransition = {fromState, toState};
       });
     });
 
@@ -54,7 +53,7 @@ describe('A TestClass which extends StateMachine', () => {
   describe('Calling the "melt()" event again', () => {
     it('should trigger "onInvalidTransition()" but not the "onStateChanged()" callback', async() => {
       await testClass.melt();
-      assert.deepEqual({event: 'melt', state: 'liquid'}, invalidTransition);
+      assert.deepEqual({fromState: 'solid', toState: 'liquid'}, invalidTransition);
       assert.deepEqual([], seenStates);
     });
 
