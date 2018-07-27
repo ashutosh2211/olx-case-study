@@ -1,7 +1,7 @@
 {
-  "name": "ctm-wordcount",
+  "name": "olx-case-study",
   "version": "1.0.0",
-  "description": "Word Counter",
+  "description": "State Machine",
   "author": "Ashutosh Banerjee",
   "private": true,
   "main": "src",
